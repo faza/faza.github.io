@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        h1, h2 {
+            color: #4caf50;
+        }
+        .title {
+            font-family: 'Honk', cursive;
+            font-size: 4em;
+            margin: 24px 0 0.2em;
+            line-height: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .subtitle {
+            font-family: 'Honk', cursive;
+            font-size: 3em;
+            margin: 24px 0 0.2em;
+            line-height: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .social-links a {
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        .social-links a:hover {
+            color: #45a049;
+        }
+        section {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1 / 1;
+        }
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .photo-item:hover img {
+            transform: scale(1.05);
+        }
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 0.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .photo-item:hover .photo-caption {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.stargaze-apis.com/qhTnNHexFcSuWM97bmZGYX0txeRNmVlH8r-MP8RpX1E/f:jpg/resize:fit:700:::/dpr:2/plain/ipfs://QmbGvE3wmxex8KiBbbvMjR8f9adR28s3XkiZSTuGmHoMHV/1327.jpg" alt="Your Name" class="profile-img">
+            <h1 class="title">Faza</h1>
+            <div class="social-links">
+                <a href="https://x.com/fazammd" target="_blank">𝕏</a>
+            </div>
+        </header>
+        
+        <section>
+            <h2 class="subtitle">About Me</h2>
+            <p>Hello! I'm Faza. I like learning and creating a positive impact in the world with my knowledge.</p>
+        </section>
+
+        <section>
+            <h2>My Photos</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="1.jpeg" alt="Photo 1">
+                    <div class="photo-caption">A cat with heterochromia</div>
+                </div>
+                <div class="photo-item">
+                    <img src="2.jpeg" alt="Photo 2">
+                    <div class="photo-caption">Sunflower heart</div>
+                </div>
+                <div class="photo-item">
+                    <img src="3.jpeg" alt="Photo 3">
+                    <div class="photo-caption">Cafe</div>
+                </div>
+                <div class="photo-item">
+                    <img src="4.jpeg" alt="Photo 4">
+                    <div class="photo-caption">A crow on stairway to heaven</div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="subtitle">Skills and Interests</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Writing</li>
+                <li>Photography</li>
+                <li>Swimming</li>
+                <li>Scuba diving</li>
+                <li>Hiking</li>
+                <li>Anime</li>
+                <li>Cats</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2 class="subtitle">Projects</h2>
+            <p>Here are some of the projects I've worked on:</p>
+            <ul>
+                <li>GDAL: I worked on "Integration of GDAL utilities into GDAL core library"​ as part of Google Summer of Code. GDAL is a translator library for raster and vector geospatial data formats.</li>
+                <li>DoSelect: I worked on various microservices for code execution, evaluation and quality analysis. Codebase is mainly in Go and some Python. Used Docker for isolating all code runs.</li>
+                <li>Gitopia: I am currently building a decentralized code collaboration platform for open source projects.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2 class="subtitle">Contact</h2>
+            <p>Feel free to reach out to me at fazamhd(at)gmail(dot)com</p>
+        </section>
+    </div>
+</body>
+</html>
